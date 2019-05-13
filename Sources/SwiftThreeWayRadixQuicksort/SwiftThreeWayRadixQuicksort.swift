@@ -25,7 +25,7 @@ extension String {
 
 extension Array where Element == String {
     
-    static let SORT_CUTOFF: Int = 5
+    static let SORT_CUTOFF: Int = 15
     
     func less(first: String, second: String, characterIndex: Int) -> Bool {
         for i in characterIndex..<Swift.min(first.count, second.count) {
